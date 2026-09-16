@@ -1,0 +1,7 @@
+{
+  "name": "z2-parity",
+  "labels": ["even", "odd"],
+  "table": [[0, 1], [1, 0]],
+  "inverse": [0, 1],
+  "identity": 0
+}

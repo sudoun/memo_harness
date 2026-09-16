@@ -1,0 +1,7 @@
+{
+  "schema_version": 2,
+  "observation_id": "tracker:7",
+  "true_relation": "1",
+  "outcome_event_id": "verified:tracker:7:v1",
+  "labeled_at": 120.0
+}

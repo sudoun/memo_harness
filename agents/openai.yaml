@@ -1,0 +1,4 @@
+interface:
+  display_name: "Posterior Memory Harness"
+  short_description: "Reconcile uncertain observations into globally consistent beliefs about structured agent state"
+  default_prompt: "Use $posterior-memory-harness to store structured state observations and query a reconciled memory capsule before deciding the next step."
