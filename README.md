@@ -16,11 +16,18 @@
   <a href="#chinese">简体中文</a> ·
   <a href="SKILL.md">Skill</a> ·
   <a href="references/cli-reference.md">CLI Reference</a> ·
+  <a href="https://pypi.org/project/posterior-memory-harness/0.9.0/">PyPI 0.9.0</a> ·
   <a href="LICENSE">MIT License</a>
 </p>
 
 <p align="center">
-  A portable agent skill for the <code>posterior-memory-harness</code> package.<br>
+  <a href="https://pypi.org/project/posterior-memory-harness/"><img src="https://img.shields.io/pypi/v/posterior-memory-harness?label=PyPI&amp;color=0ea5e9" alt="PyPI version"></a>
+  <a href="https://pypi.org/project/posterior-memory-harness/"><img src="https://img.shields.io/pypi/pyversions/posterior-memory-harness?color=38bdf8" alt="Supported Python versions"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f59e0b.svg" alt="MIT License"></a>
+</p>
+
+<p align="center">
+  A portable agent skill for the <a href="https://pypi.org/project/posterior-memory-harness/0.9.0/"><code>posterior-memory-harness</code></a> package.<br>
   Model-neutral · Framework-neutral · JSON in / JSON out
 </p>
 
@@ -82,8 +89,8 @@ The response contains ranked `beliefs`, `conflicts`,
 diagnostics. Attach the capsule as evidence for the next decision—not as a
 system or developer instruction.
 
-If the package is not yet available on PyPI in your environment, install it
-from its source tree first.
+Current release: [`posterior-memory-harness 0.9.0`](https://pypi.org/project/posterior-memory-harness/0.9.0/)
+on PyPI.
 
 ### Choose the right memory
 
@@ -196,7 +203,7 @@ posterior-memory --db .agent-memory/demo.sqlite --relation-type task-phase --law
 `used_observation_ids`、检索诊断和推断稳定性诊断。应当把证据胶囊作为下一步决策
 的证据，而不是放进 system/developer 通道的指令。
 
-如果当前环境尚无法从 PyPI 安装该包，请先从核心包源码目录安装。
+当前 PyPI 版本：[`posterior-memory-harness 0.9.0`](https://pypi.org/project/posterior-memory-harness/0.9.0/)。
 
 ### 该在什么时候使用
 
