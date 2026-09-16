@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">Choose the right memory system</title>
+  <desc id="desc">Posterior Memory Harness is for related structured state; semantic or vector memory is for free-form knowledge recall.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#111b31"/>
+    </linearGradient>
+    <linearGradient id="left" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2739"/>
+      <stop offset="1" stop-color="#102237"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#211b2e"/>
+      <stop offset="1" stop-color="#151c2d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="470" rx="28" fill="url(#bg2)"/>
+  <text x="600" y="58" fill="#f8fafc" font-size="27" font-weight="700" text-anchor="middle" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif">Choose the right memory · 选择合适的记忆系统</text>
+
+  <g transform="translate(55 95)">
+    <rect width="520" height="310" rx="24" fill="url(#left)" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="48" cy="49" r="20" fill="#0c4a6e" stroke="#67e8f9" stroke-width="2"/>
+    <path d="M38 50L46 58L59 40" fill="none" stroke="#67e8f9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="44" fill="#f8fafc" font-size="21" font-weight="700" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif">Posterior Memory Harness</text>
+    <text x="82" y="68" fill="#7dd3fc" font-size="15" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif">结构化关系状态 · Structured relational state</text>
+
+    <g fill="#dbeafe" font-size="16" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif">
+      <text x="38" y="121">✓ Checkpoints and task phases · 检查点与任务阶段</text>
+      <text x="38" y="160">✓ Noisy observations and cycles · 噪声观测与环约束</text>
+      <text x="38" y="199">✓ Retries and lineage dedup · 重试与谱系去重</text>
+      <text x="38" y="238">✓ Corrections and as-of audits · 纠正与时点审计</text>
+    </g>
+    <rect x="38" y="263" width="444" height="32" rx="9" fill="#082f49"/>
+    <text x="260" y="284" fill="#67e8f9" font-size="13" text-anchor="middle" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif">Output: consistent beliefs + trace · 输出：一致信念与证据链</text>
+  </g>
+
+  <g transform="translate(625 95)">
+    <rect width="520" height="310" rx="24" fill="url(#right)" stroke="#a78bfa" stroke-width="2"/>
+    <circle cx="48" cy="49" r="20" fill="#3b2664" stroke="#c4b5fd" stroke-width="2"/>
+    <path d="M38 43H58M38 50H58M38 57H52" fill="none" stroke="#c4b5fd" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="82" y="44" fill="#f8fafc" font-size="21" font-weight="700" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif">Semantic / Vector Memory</text>
+    <text x="82" y="68" fill="#c4b5fd" font-size="15" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif">自由文本知识召回 · Free-form knowledge recall</text>
+
+    <g fill="#ede9fe" font-size="16" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif">
+      <text x="38" y="121">• Documents and passages · 文档与段落</text>
+      <text x="38" y="160">• Facts and notes · 事实与笔记</text>
+      <text x="38" y="199">• Q&amp;A and semantic search · 问答与语义搜索</text>
+      <text x="38" y="238">• Similarity-based retrieval · 相似度召回</text>
+    </g>
+    <rect x="38" y="263" width="444" height="32" rx="9" fill="#2e1065"/>
+    <text x="260" y="284" fill="#c4b5fd" font-size="13" text-anchor="middle" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif">Output: relevant content · 输出：相关内容</text>
+  </g>
+</svg>
