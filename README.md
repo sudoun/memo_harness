@@ -22,7 +22,7 @@
 
 <p align="center">
   <a href="https://pypi.org/project/posterior-memory-harness/"><img src="https://img.shields.io/pypi/v/posterior-memory-harness?label=PyPI&amp;color=0ea5e9" alt="PyPI version"></a>
-  <a href="https://pypi.org/project/posterior-memory-harness/"><img src="https://img.shields.io/pypi/pyversions/posterior-memory-harness?color=38bdf8" alt="Supported Python versions"></a>
+  <a href="https://pypi.org/project/posterior-memory-harness/0.9.0/"><img src="https://img.shields.io/badge/python-%3E%3D3.10-38bdf8.svg" alt="Python 3.10 or newer"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f59e0b.svg" alt="MIT License"></a>
 </p>
 
