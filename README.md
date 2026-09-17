@@ -103,11 +103,20 @@ constraints, corrections, and time-aware audits. Use semantic/vector memory
 for free-form documents, facts, Q&amp;A, and similarity retrieval. They solve
 different problems and can be used together.
 
-### Install the skill
+### Source code and install the skill
 
-This repository is the **portable skill bundle**, not the core Python package
-source. Copy or symlink it as `posterior-memory-harness/` into an agent host's
-skill directory:
+This repository contains both the source code for
+[`posterior-memory-harness`](https://pypi.org/project/posterior-memory-harness/)
+and its portable Agent Skill. The `v0.9.0` tag corresponds to the PyPI 0.9.0
+Python package files in `src/` match the PyPI 0.9.0 release. To install that
+audited source version directly:
+
+```bash
+python -m pip install "git+https://github.com/sudoun/memo_harness.git@v0.9.0"
+```
+
+For Agent hosts, copy or symlink the repository as
+`posterior-memory-harness/` into the host's skill directory:
 
 | Host | User-level | Project-level |
 |---|---|---|
@@ -137,6 +146,10 @@ ln -s ../.agents/skills .claude/skills
 | [references/encoder-guide.md](references/encoder-guide.md) | Calibration rules and encoder templates |
 | [scripts/](scripts/) | Runnable observation, query, outcome, monitor, and finite-law payloads |
 | [agents/openai.yaml](agents/openai.yaml) | Optional Codex/OpenAI-style UI metadata |
+| [src/posterior_memory_harness/](src/posterior_memory_harness/) | Installable Python package source |
+| [tests/](tests/) | Unit and cross-process integration tests |
+| [pyproject.toml](pyproject.toml) | Package metadata and build configuration |
+| [docs/](docs/) | Release notes and operational design documents |
 
 ### Safety contract
 
@@ -211,10 +224,19 @@ posterior-memory --db .agent-memory/demo.sqlite --relation-type task-phase --law
 审计。自由文本、文档、事实、问答和相似度召回应当使用语义/向量记忆。两类记忆
 解决的是不同问题，也可以组合使用。
 
-### 安装技能
+### 源码与安装技能
 
-这个仓库是**可移植技能包**，不是核心 Python 包的源码仓库。请将仓库复制或链接为
-`posterior-memory-harness/`，放入 Agent 宿主的技能目录：
+这个仓库同时包含
+[`posterior-memory-harness`](https://pypi.org/project/posterior-memory-harness/)
+的核心源码和可移植 Agent Skill。`v0.9.0` tag 与 PyPI 的 0.9.0 发布版本对应；可直接安装这份经审计的源码：
+
+`src/` 下的 Python 包文件与 PyPI 0.9.0 发布版本一致；可直接安装这份经审计的源码：
+
+```bash
+python -m pip install "git+https://github.com/sudoun/memo_harness.git@v0.9.0"
+```
+
+对于 Agent 宿主，请将仓库复制或链接为 `posterior-memory-harness/`，放入技能目录：
 
 | 宿主 | 用户级目录 | 项目级目录 |
 |---|---|---|
@@ -244,6 +266,10 @@ ln -s ../.agents/skills .claude/skills
 | [references/encoder-guide.md](references/encoder-guide.md) | 校准规则与编码器模板 |
 | [scripts/](scripts/) | 可运行的观测、查询、结果、监控和有限关系律示例 |
 | [agents/openai.yaml](agents/openai.yaml) | 可选的 Codex/OpenAI 风格界面元数据 |
+| [src/posterior_memory_harness/](src/posterior_memory_harness/) | 可安装的 Python 包源码 |
+| [tests/](tests/) | 单元测试与跨进程集成测试 |
+| [pyproject.toml](pyproject.toml) | 包元数据和构建配置 |
+| [docs/](docs/) | 发布说明与运行设计文档 |
 
 ### 安全契约
 

@@ -1,0 +1,15 @@
+{
+  "schema_version": 2,
+  "namespace": "agent-run-42",
+  "relation_type": "task-phase",
+  "seeds": ["start"],
+  "root": "start",
+  "as_of": 101,
+  "tags": ["project-x"],
+  "max_hops": 2,
+  "max_nodes": 16,
+  "max_observations": 128,
+  "top_k": 3,
+  "inference": "auto",
+  "retrieval_policy": "cycle_aware"
+}

@@ -1,0 +1,115 @@
+{
+  "audit_version": "llm_agent_memory_locked_v1",
+  "conditions": [
+    "raw_context",
+    "hard_top1_memory",
+    "full_posterior_memory"
+  ],
+  "decisions": {
+    "full_capsule_adherence": false,
+    "full_minus_hard_accuracy": false,
+    "parse_rate": true
+  },
+  "locked_seeds": [
+    3100,
+    3101,
+    3102,
+    3103,
+    3104,
+    3105,
+    3106,
+    3107,
+    3108,
+    3109,
+    3110,
+    3111,
+    3112,
+    3113,
+    3114,
+    3115,
+    3116,
+    3117,
+    3118,
+    3119,
+    3120,
+    3121,
+    3122,
+    3123,
+    3124,
+    3125,
+    3126,
+    3127,
+    3128,
+    3129,
+    3130,
+    3131,
+    3132,
+    3133,
+    3134,
+    3135,
+    3136,
+    3137,
+    3138,
+    3139
+  ],
+  "model": {
+    "license": "Apache-2.0",
+    "model_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "repository": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "186d8559ad54c32cf47dc3a8225f993742c507b8",
+    "source": "ModelScope"
+  },
+  "paired": {
+    "full_minus_hard": {
+      "ci_high": 0.125,
+      "ci_low": -0.075,
+      "mean_difference": 0.025
+    },
+    "full_minus_raw": {
+      "ci_high": 0.1,
+      "ci_low": -0.15,
+      "mean_difference": -0.025
+    }
+  },
+  "primary_pass": false,
+  "runner_sha256": "97cb8cabf58adea82e9cec6ad45e253c3f2f2831b2ecbf3f658a3f7bc6f77db7",
+  "runtime": {
+    "decoding": "greedy",
+    "device": "cpu",
+    "dtype": "float32",
+    "max_new_tokens": 20,
+    "torch": "2.12.1+cpu",
+    "transformers": "4.53.2"
+  },
+  "success_guards": {
+    "full_minus_hard_accuracy_ci_low_strictly_above": 0.0,
+    "minimum_full_capsule_adherence": 0.9,
+    "minimum_parse_rate_each_condition": 0.9
+  },
+  "summaries": {
+    "full_posterior_memory": {
+      "accuracy": 0.15,
+      "capsule_adherence": 0.15,
+      "episodes": 40,
+      "mean_input_tokens": 2064.325,
+      "mean_latency_seconds": 3.882861670000028,
+      "parse_rate": 1.0
+    },
+    "hard_top1_memory": {
+      "accuracy": 0.125,
+      "capsule_adherence": 0.075,
+      "episodes": 40,
+      "mean_input_tokens": 2049.425,
+      "mean_latency_seconds": 3.7858491600000037,
+      "parse_rate": 1.0
+    },
+    "raw_context": {
+      "accuracy": 0.175,
+      "capsule_adherence": null,
+      "episodes": 40,
+      "mean_input_tokens": 1283.15,
+      "mean_latency_seconds": 2.5349400049999873,
+      "parse_rate": 1.0
+    }
+  }
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "posterior-memory-harness"
+version = "0.9.0"
+description = "Model-agnostic probabilistic relation memory middleware for LLM agents"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+license = {text = "MIT"}
+authors = [{name = "sudoun"}]
+
+[project.scripts]
+posterior-memory = "posterior_memory_harness.cli:main"
+posterior-memory-schema = "posterior_memory_harness.cli:schema_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+posterior_memory_harness = ["py.typed", "schemas/*.json"]

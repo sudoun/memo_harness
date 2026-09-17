@@ -1,0 +1,26 @@
+{
+  "status": "controlled_exploratory_benchmark_complete",
+  "scope": "memory inference layer only; simulated local observation posterior",
+  "formal_run": {
+    "seeds": 20,
+    "episodes_per_seed": 200,
+    "development_smoke_used_to_change_generator": false,
+    "non_runtime_metrics_exactly_reproduced_after_final_validation_patch": true
+  },
+  "source_sha256": {
+    "memory_harness.py": "7AECDCE183A7739ECEC5E859C8702BF44B1CA73446AD1F3F6479611E8D388348",
+    "run_controlled_benchmark.py": "8FE89AB7008662FADC6F3D577F15E70EFCD39DD4FBCEB830A33E98D23BAC477A",
+    "test_memory_harness.py": "D32E6BCBA64FD922C819A2E1B43F628949C9B23D3134C0CCC89C9C50640029DA"
+  },
+  "result_sha256": {
+    "seed_metrics.csv": "D0112245DE2D263E3D51D8C299EBCFC6A2B69177AEDE396BA19490930CD31E86",
+    "paired_bootstrap.csv": "34CDA15787DE7CAC73A6778F06029EFAA758AC121D25795E966BE0BD0B256228",
+    "absolute_bootstrap.csv": "41AB2FE628C51550CC54DEA42763DD832F2BC11D84CB622EEA7E70B3CA81332B",
+    "diagnostics.csv": "DF1AAB4B69B97039C0E4FCEFFCDA8F42D8CAEE1C5EA3B77EF18EE0EBCBA2D520"
+  },
+  "claims_not_authorized": [
+    "open-domain LLM benchmark improvement",
+    "calibrated LLM self-reported confidence",
+    "universal benefit for memories without compositional constraints"
+  ]
+}

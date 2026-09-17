@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "observation_id": "tracker:7",
+  "namespace": "agent-run-42",
+  "relation_type": "task-phase",
+  "source": "start",
+  "target": "after-build",
+  "posterior": {"0": 0.02, "1": 0.92, "2": 0.04, "3": 0.02},
+  "prior": {"0": 0.25, "1": 0.25, "2": 0.25, "3": 0.25},
+  "evidence_family": "raw-tool-call:7",
+  "source_event_id": "tool-event:7",
+  "lineage_root_id": "tool-event:7",
+  "derived_from": [],
+  "encoder_revision": "verified-tool-parser:v1",
+  "calibration_revision": "tool-deterministic:v1",
+  "provenance": {"tool": "build-tracker", "event": "7"},
+  "observed_at": 100,
+  "valid_from": 100,
+  "tags": ["project-x"]
+}

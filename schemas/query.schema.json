@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Posterior memory query",
+  "type": "object",
+  "required": ["namespace", "relation_type", "root"],
+  "oneOf": [
+    {
+      "required": ["nodes"],
+      "not": {
+        "anyOf": [
+          {"required": ["seeds"]},
+          {"required": ["max_hops"]},
+          {"required": ["max_nodes"]}
+        ]
+      }
+    },
+    {
+      "required": ["seeds"],
+      "not": {"required": ["nodes"]}
+    }
+  ],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 2},
+    "namespace": {"type": "string", "minLength": 1, "maxLength": 512},
+    "relation_type": {"type": "string", "minLength": 1, "maxLength": 512},
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 256,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 512}
+    },
+    "seeds": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 256,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 512}
+    },
+    "root": {"type": "string", "minLength": 1, "maxLength": 512},
+    "as_of": {"type": ["number", "null"]},
+    "tags": {
+      "type": "array",
+      "maxItems": 64,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 128}
+    },
+    "max_observations": {"type": "integer", "minimum": 1, "maximum": 4096},
+    "max_hops": {"type": "integer", "minimum": 1, "maximum": 8},
+    "max_nodes": {"type": "integer", "minimum": 1, "maximum": 256},
+    "top_k": {"type": "integer", "minimum": 1, "maximum": 256},
+    "hard_top1": {"type": "boolean"},
+    "inference": {"enum": ["auto", "exact", "beam"]},
+    "retrieval_policy": {
+      "enum": ["recent", "coverage", "cycle_aware"]
+    },
+    "node_priors": {
+      "type": "object",
+      "maxProperties": 256,
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 256,
+            "items": {"type": "number", "minimum": 0}
+          },
+          {
+            "type": "object",
+            "minProperties": 1,
+            "maxProperties": 256,
+            "additionalProperties": {"type": "number", "minimum": 0}
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,32 @@
+# Python environments, caches, and coverage
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Build and release artifacts
+build/
+dist/
+*.whl
+*.tar.gz
+
+# Local state produced by the CLI and tests
+.agent-memory/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Local verification workspaces and downloaded model weights
+.release_verify_*/
+.final_zip_verify_*/
+models/
+
+# Operating-system and editor files
+.DS_Store
+.vscode/

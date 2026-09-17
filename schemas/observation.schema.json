@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Posterior memory observation",
+  "type": "object",
+  "required": [
+    "namespace",
+    "relation_type",
+    "source",
+    "target",
+    "posterior",
+    "evidence_family"
+  ],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 2},
+    "observation_id": {"type": "string", "minLength": 1, "maxLength": 512},
+    "namespace": {"type": "string", "minLength": 1, "maxLength": 512},
+    "relation_type": {"type": "string", "minLength": 1, "maxLength": 512},
+    "source": {"type": "string", "minLength": 1, "maxLength": 512},
+    "target": {"type": "string", "minLength": 1, "maxLength": 512},
+    "posterior": {
+      "oneOf": [
+        {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 256,
+          "items": {"type": "number", "minimum": 0}
+        },
+        {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 256,
+          "additionalProperties": {"type": "number", "minimum": 0}
+        }
+      ]
+    },
+    "prior": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 256,
+          "items": {"type": "number", "minimum": 0}
+        },
+        {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 256,
+          "additionalProperties": {"type": "number", "minimum": 0}
+        }
+      ]
+    },
+    "evidence_family": {"type": "string", "minLength": 1, "maxLength": 512},
+    "source_event_id": {
+      "type": ["string", "null"],
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "lineage_root_id": {
+      "type": ["string", "null"],
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "derived_from": {
+      "type": "array",
+      "maxItems": 256,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 512}
+    },
+    "encoder_revision": {
+      "type": ["string", "null"],
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "calibration_revision": {
+      "type": ["string", "null"],
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "provenance": {"type": "object"},
+    "observed_at": {"type": ["number", "null"]},
+    "valid_from": {"type": ["number", "null"]},
+    "valid_until": {"type": ["number", "null"]},
+    "independent_evidence": {"type": "boolean"},
+    "trust": {"type": "number", "minimum": 0, "maximum": 1},
+    "tags": {
+      "type": "array",
+      "maxItems": 64,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 128}
+    }
+  },
+  "additionalProperties": false
+}

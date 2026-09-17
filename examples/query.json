@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "namespace": "agent-run-42",
+  "relation_type": "task-phase",
+  "nodes": ["start", "after-build"],
+  "root": "start",
+  "as_of": 101,
+  "tags": ["project-x"],
+  "top_k": 3,
+  "inference": "auto",
+  "retrieval_policy": "cycle_aware"
+}

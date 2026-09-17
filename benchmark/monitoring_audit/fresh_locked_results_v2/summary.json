@@ -1,0 +1,57 @@
+{
+  "audit": "calibration_drift_monitor_fresh_locked_v2",
+  "locked_config": {
+    "current_size": 400,
+    "ece_bins": 10,
+    "max_brier_increase": 0.04,
+    "max_ece": 0.08,
+    "max_nll_increase": 0.1,
+    "max_prediction_js": 0.01,
+    "max_tracked": 1000,
+    "min_current_size": 400,
+    "reference_size": 400
+  },
+  "locked_seeds": [
+    2100,
+    2101,
+    2102,
+    2103,
+    2104,
+    2105,
+    2106,
+    2107,
+    2108,
+    2109
+  ],
+  "success_guards": {
+    "overconfident_alert_rate_min": 0.9,
+    "prediction_shift_alert_rate_min": 0.9,
+    "stable_alert_rate_max": 0.1
+  },
+  "summary": {
+    "overconfident": {
+      "alert_rate": 1.0,
+      "mean_brier_delta": 0.0444326654692878,
+      "mean_current_ece": 0.16256694231745777,
+      "mean_nll_delta": 0.1878457844585305,
+      "mean_prediction_marginal_js": 0.0003427737807595691,
+      "seeds": 10
+    },
+    "prediction_shift": {
+      "alert_rate": 1.0,
+      "mean_brier_delta": 0.002149654605201906,
+      "mean_current_ece": 0.03654550497946764,
+      "mean_nll_delta": 7.894873949928493e-05,
+      "mean_prediction_marginal_js": 0.02753759946187504,
+      "seeds": 10
+    },
+    "stable": {
+      "alert_rate": 0.0,
+      "mean_brier_delta": -0.00954895725943405,
+      "mean_current_ece": 0.03383777089534307,
+      "mean_nll_delta": -0.012984337231129512,
+      "mean_prediction_marginal_js": 0.00020248843986072693,
+      "seeds": 10
+    }
+  }
+}
