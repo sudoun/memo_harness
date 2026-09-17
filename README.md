@@ -149,7 +149,6 @@ ln -s ../.agents/skills .claude/skills
 | [src/posterior_memory_harness/](src/posterior_memory_harness/) | Installable Python package source |
 | [tests/](tests/) | Unit and cross-process integration tests |
 | [pyproject.toml](pyproject.toml) | Package metadata and build configuration |
-| [docs/](docs/) | Release notes and operational design documents |
 
 ### Safety contract
 
@@ -269,7 +268,6 @@ ln -s ../.agents/skills .claude/skills
 | [src/posterior_memory_harness/](src/posterior_memory_harness/) | 可安装的 Python 包源码 |
 | [tests/](tests/) | 单元测试与跨进程集成测试 |
 | [pyproject.toml](pyproject.toml) | 包元数据和构建配置 |
-| [docs/](docs/) | 发布说明与运行设计文档 |
 
 ### 安全契约
 
