@@ -24,6 +24,7 @@
   <a href="https://pypi.org/project/posterior-memory-harness/"><img src="https://img.shields.io/pypi/v/posterior-memory-harness?label=PyPI&amp;color=0ea5e9" alt="PyPI version"></a>
   <a href="https://pypi.org/project/posterior-memory-harness/0.9.0/"><img src="https://img.shields.io/badge/python-%3E%3D3.10-38bdf8.svg" alt="Python 3.10 or newer"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f59e0b.svg" alt="MIT License"></a>
+  <a href="https://github.com/sudoun/memo_harness/actions/workflows/ci.yml"><img src="https://github.com/sudoun/memo_harness/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI status"></a>
 </p>
 
 <p align="center">
@@ -149,6 +150,9 @@ ln -s ../.agents/skills .claude/skills
 | [src/posterior_memory_harness/](src/posterior_memory_harness/) | Installable Python package source |
 | [tests/](tests/) | Unit and cross-process integration tests |
 | [pyproject.toml](pyproject.toml) | Package metadata and build configuration |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Local setup and pull-request guidance |
+| [SECURITY.md](SECURITY.md) | Supported versions and vulnerability reporting |
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
 
 ### Safety contract
 
@@ -268,6 +272,9 @@ ln -s ../.agents/skills .claude/skills
 | [src/posterior_memory_harness/](src/posterior_memory_harness/) | 可安装的 Python 包源码 |
 | [tests/](tests/) | 单元测试与跨进程集成测试 |
 | [pyproject.toml](pyproject.toml) | 包元数据和构建配置 |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | 本地开发和 Pull Request 指南 |
+| [SECURITY.md](SECURITY.md) | 支持版本和漏洞报告方式 |
+| [CHANGELOG.md](CHANGELOG.md) | 版本记录 |
 
 ### 安全契约
 

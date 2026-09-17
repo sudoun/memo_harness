@@ -1,0 +1,43 @@
+name: Bug report
+description: Report reproducible unexpected behavior in the package or CLI.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not include credentials, private datasets, or security-sensitive details.
+        See SECURITY.md for vulnerabilities.
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      placeholder: 0.9.0
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version and operating system
+      placeholder: Python 3.12 on Ubuntu 24.04
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Include the smallest safe payload, command, or Python snippet.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and complete error output
+    validations:
+      required: true

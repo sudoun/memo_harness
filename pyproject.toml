@@ -12,6 +12,11 @@ dependencies = ["numpy>=1.24"]
 license = {text = "MIT"}
 authors = [{name = "sudoun"}]
 
+[project.urls]
+Homepage = "https://github.com/sudoun/memo_harness"
+Source = "https://github.com/sudoun/memo_harness"
+Issues = "https://github.com/sudoun/memo_harness/issues"
+
 [project.scripts]
 posterior-memory = "posterior_memory_harness.cli:main"
 posterior-memory-schema = "posterior_memory_harness.cli:schema_main"
